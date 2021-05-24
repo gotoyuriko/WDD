@@ -1,29 +1,38 @@
 // ========================== BURGEUR MENU ==========================
-function openNav() {
-  document.getElementById("myMenu").style.width = "100%";
-}
+$(function () {
+  //when you clise menu
+  $('.closebtn').click(function () {
+    $('.overlay').css('width', '0');
+  });
 
-function closeNav() {
-  document.getElementById("myMenu").style.width = "0";
-}
+  //when you open menu
+  $('.burger-button').click(function () {
+    $('.overlay').css('width', '100%');
+  });
+});
 
 
 
 // ==========================  MODAL ==========================
-// function openModal() {
-//   document.getElementById("yuri-modal").style.display = "block";
-//   var img = document.getElementsByClassName("gallery-image");
-//   var modalImg = document.getElementById("imgShow");
-//   var captionText = document.getElementById("captionShow");
-//   console.log("テスト");
-//   modalImg.src = img.src;
-//   captionText.innerHTML = img.alt;
-// }
+$(function () {
 
+  //when gallery image is clicked 
+  $('.gallery-grid-item img').click(function () {
+    $('.gallery-modal').css('display', 'block');
+    var source = $(this).attr("src");
+    var alter = $(this).attr("alt");
+    $('#captionShow').text(alter);
+    $('#imgShow').attr({
+      src: source,
+      alt: alter
+    });
+  });
 
-// function closeModal() {
-//   document.getElementById("yuri-modal").style.display = "none";
-// }
+  //when close button of gallery image is clicked
+  $('.modal-close').click(function () {
+    $('.gallery-modal').css('display', 'none');
+  })
+});
 
 
 
