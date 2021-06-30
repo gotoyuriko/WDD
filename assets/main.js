@@ -35,5 +35,16 @@ $(function () {
 });
 
 
+// ==========================  PARRLLAX ==========================
+
+$(function () {
+  var top = $('#community h1').offset().top;
+  $(window).scroll(function () {
+    var value = $(this).scrollTop();
+    $('#community h1').css('top', top + value * 0.5 + 'px');
+    $('#community h2').css('top', top + value * 0.3 + 'px');
+  });
+});
+
 
 
