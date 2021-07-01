@@ -49,6 +49,17 @@
   overflow: hidden;
 }
 
+/*Fade In Animation Left to Right*/
+.left-to-right {
+  opacity: 0.1;
+  transform: translateX(-20px);
+  transition: all 1s;
+}
+.left-to-right.scrollin {
+  opacity: 1;
+  transform: translate(0);
+}
+
 
 
 
