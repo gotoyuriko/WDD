@@ -58,24 +58,27 @@
 
   <!-- HERO -->
   <section id="signup" class="parallax-bg">
-    <form class="signup-content" method="post">
+    <form class="signup-content" action="inside-community.html" method="get">
       <h1>SIGN UP</h1>
       <!-- email -->
       <label for="email"><b>EMAIL</b></label>
       <input type="email" placeholder="Enter Email" id="email" required>
       <!-- username -->
       <label for="uname"><b>USERNAME</b></label>
-      <input type="text" placeholder="Enter Username" required>
+      <input type="text" id="uname" placeholder="Enter Username" required>
       <!-- password -->
       <label for="psw"><b>PASSWORD</b></label>
       <input type="password" placeholder="Enter Password" id="psw" required>
       <!-- password -->
-      <label for="psw"><b>CONFIRM PASSWORD</b></label>
-      <input type="password" placeholder="Confirm Password" required>
+      <label for="conPsw"><b>CONFIRM PASSWORD</b></label>
+      <input type="password" placeholder="Confirm Password" id="conPsw" required>
+
+      <div id="messageSignUp"></div>
       <!-- login button -->
       <div class="submit-btn">
-        <a href="./inside-community.html">Sign Up</a>
+        <input type="submit" value="Sign Up">
       </div>
+
       <!-- sign up ??-->
       <p>You don't have an account? <a href="./login.html">Log In</a></p>
     </form>

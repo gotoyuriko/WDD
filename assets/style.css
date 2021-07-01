@@ -900,6 +900,12 @@ footer{
   text-align: center;
   padding-top: 5%;
 }
+#sendDone{
+  color: #B60033;
+  text-align: center;
+  font-weight: normal;
+  margin-top: 30px;
+}
 
 
 
@@ -935,7 +941,7 @@ footer{
 .submit-btn{
   text-align: center;
 }
-.submit-btn a{
+.submit-btn input[type="submit"]{
   background-color: #F6BAC6;
   color: #000000 !important;
   text-decoration: none;
@@ -946,7 +952,7 @@ footer{
   cursor: pointer;
   transition: .3s ease-in-out;
 }
-.submit-btn a:hover{
+.submit-btn input[type="submit"]:hover{
   background-color: #B60033;
   color: white !important;
 }
@@ -1008,6 +1014,12 @@ footer{
 .signup-content p{
   margin: 10%;
   text-align: center;
+  font-weight: normal;
+}
+#messageSignUp{
+  text-align: center;
+  padding: 5%;
+  color: #B60033;
   font-weight: normal;
 }
 

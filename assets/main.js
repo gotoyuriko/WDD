@@ -47,4 +47,27 @@ $(function () {
 });
 
 
+// ==========================  MAIL BUTTON ==========================
+$(function () {
+  $('#contact-form').submit(function () {
+    $('#sendDone').text("Thank you for your messages! I will read it as soon as Possible :)");
+    return false;
+  });
+});
+
+
+// ==========================  Sgin up Confirmation Pages ==========================
+var username;
+$(function () {
+  $('.signup-content').submit(function () {
+    var password = $("#psw").val();
+    var confrimPassword = $("#conPsw").val();
+    if (password == confrimPassword) {
+      alert("Thank You for your sign up !!");
+    } else {
+      $('#messageSignUp').text("Your password is not correct. Please try again.");
+      return false;
+    }
+  });
+});
 
