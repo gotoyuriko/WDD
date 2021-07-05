@@ -141,9 +141,15 @@
 .access-instagram figcaption{
   margin-top: 10px;
 }
+.access-instagram img{
+  width:"80px";
+}
 .access-yc-studio figcaption{
   margin-top: 5px;
   margin-bottom: 10px;
+}
+.access-yc-studio img{
+  width:"80px";
 }
 
 
@@ -186,13 +192,13 @@ header{
   left: 8%;
   transform: translateY(-50%);
 }
-.hero-content h1{
+.hero-content h2{
   font-size: 80px;
   margin: 10px 0 30px;
   line-height: 80px;
   color: #B60033;
 }
-.hero-content h2{
+.hero-content h3{
   font-size: 40px;
   margin: 10px 0;
   line-height: 80px;
@@ -213,7 +219,7 @@ header{
   right: 8%;
   transform: translateY(-50%);
 }
-.about-content h1{
+.about-content h2{
   font-size: 80px;
   margin: 10px 0 30px;
   line-height: 80px;
@@ -257,7 +263,7 @@ header{
   left: 8%;
   transform: translateY(-50%);
 }
-.gallery-content h1{
+.gallery-content h2{
   font-size: 80px;
   margin: 10px 0 30px;
   line-height: 80px;
@@ -291,7 +297,7 @@ header{
   height: 100vh;
   background: #E3DACD;
 }
-.plan-content h1 {
+.plan-content h2{
   text-align: center;
   margin: 80px;
   font-size: 80px;
@@ -350,7 +356,7 @@ li:nth-child(3) .plan-overlay{
   text-decoration: none;
   color: #000000;
 }
-.plan-content h2{
+.plan-content h3{
   margin-top: 80px;
   font-size: 30px;
 }
@@ -386,7 +392,7 @@ li:nth-child(3) .plan-overlay{
   height: 100vh;
   text-align: center;
 }
-.info-conatct h1{
+.info-conatct h2{
   font-size: 80px;
   padding: 80px;
 }
@@ -536,7 +542,7 @@ footer{
   background: #F3EEE8;
   min-height: 100%;
 }
-#goods h1{
+#goods h2{
   font-size: 80px;
   text-align: center;
   padding-top: 10%;
@@ -624,7 +630,7 @@ footer{
   min-height: 100%;
   width: 100%;
 }
-#yuri-gallery h1{
+#yuri-gallery h2{
   font-size: 80px;
   text-align: center;
   padding-top: 10%;
@@ -728,22 +734,25 @@ footer{
   background: #F3EEE8;
   min-height: 100%;
 }
-#inside-community h1{
+#inside-community h2{
   font-size: 80px;
   text-align: center;
   padding-top: 10%;
 }
 #inside-community p{
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
+  padding: 2%;
 }
 .newsevent{
   position: relative;
+  height: 20%;
 }
-.newsevent h2{
-  font-size: 45px;
-  margin: 5% auto -5%;
-  text-align:center;
+.newsevent>h3{
+  font-size: 40px;
+  margin-top: 5%;
+  margin-bottom: -3%;
+  text-align: center;
 }
 .newsevent-grid-container {
   display: grid;
@@ -761,6 +770,14 @@ footer{
 }
 .newsevent-grid-item img{
   width: 100%;
+  height: 300px;
+}
+.newsevent-grid-item h3{
+  font-size: 16px;
+  margin: 5% auto -5%;
+  text-align:center;
+  width: 80%;
+  padding: 5%;
 }
 .newsevent-grid-item p{
   font-size: 60px;
@@ -786,7 +803,7 @@ footer{
   left: 0;
   content: ' ';
 }
-#facebook-community h1{
+#facebook-community h2{
   position: absolute;
   top: 20%;
   width: 100%;
@@ -831,7 +848,7 @@ footer{
   box-shadow:5px 5px 3px rgba(0, 0, 0, .3);
   padding: 8%;
 }
-.contactForm-contain h1,
+.contactForm-contain h2,
 .contactForm-contain p,
 .contactForm-contain label,
 .contactForm-contain span,
@@ -839,7 +856,7 @@ footer{
 .contactForm-contain input[placeholder]{
   font-family: Arial, Helvetica, sans-serif;
 }
-.contactForm-contain h1{
+.contactForm-contain h2{
   font-weight:bold;
   font-size: 40px;
   letter-spacing: 8px;
@@ -1048,11 +1065,11 @@ footer{
   text-align: center;
   padding-top: 10%;
 }
-.aboutMe-title h2{
+.aboutMe-title h3{
   font: 36px;
   letter-spacing: 2px;
 }
-.aboutMe-title h1{
+.aboutMe-title h2{
   font-size: 80px;
   color: #B60033;
 }
@@ -1120,7 +1137,7 @@ footer{
   max-width: 940px;
   margin: 28px auto;
 }
-.background-content h1{
+.background-content h2{
   font-size: 50px;
 }
 .timeline-list {
@@ -1187,7 +1204,7 @@ footer{
   max-width: 940px;
   margin: 28px auto;
 }
-.skill-content h1{
+.skill-content h2{
   font-size: 50px;
   margin-bottom: 30px;
 }
@@ -1227,7 +1244,7 @@ footer{
 .commission-cotainer{
   padding: 10%;
 }
-.commission-cotainer>h1{
+.commission-cotainer>h2{
   color: #B60033;
   font-size: 60px;
   text-align: center;
@@ -1245,14 +1262,14 @@ footer{
 }
 .commission-2 img{
   width: 600px;
-  padding-right: 10%;
+  padding-right: 15%;
 }
 .commission-3 img{
   width: 500px;
   padding-left: 15%;
 }
-.commission-description h1{
-  font-size: 50px;
+.commission-description h3{
+  font-size: 40px;
 }
 .commission-description p{
   padding-top: 5%;
@@ -1276,7 +1293,7 @@ footer{
   overflow: hidden;
   top:0;
 }
-#community h1{
+#community h2{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1285,7 +1302,7 @@ footer{
   font-size: 60px;
   text-align: center;
 }
-#community h2{
+#community h3{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1313,7 +1330,7 @@ footer{
   justify-content: space-around;
 }
 .community-1 img{
-  padding-right: 15%;
+  padding-left: 15%;
 }
 .community-2 img{
   padding-left: 10%;
